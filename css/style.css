@@ -1,0 +1,160 @@
+.header{
+  padding:40px 0;
+  font-size:16px;
+  font-weight:400;
+  color:#626262 ;
+}
+
+
+.nav-item{  
+  border-bottom: 1px solid transparent;
+  transition: linear .33s;
+}
+
+.nav-item:hover{
+    border-bottom: 1px solid blue;
+}
+
+.quote{
+  font-size:24px;
+}
+
+.representative{
+  font-size: 14px;
+}
+
+.nav {
+    flex-wrap: nowrap;        /* prevents wrapping */
+    white-space: nowrap;      /* keeps text in one line */
+}
+
+.offer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.offer-list li {
+    font-size: 16px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+ 
+.offer-list li::before {
+    content: "✔";
+    color: #007BFF;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+.product-item summary {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.product-item summary:hover {
+  background: #f0f7ff;
+  color: #0d6efd;
+}
+
+
+.product-item summary::after {
+  content: "▸";
+  float: right;
+  transition: transform 0.3s;
+}
+
+.product-item[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.sub-items {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-items div {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.sub-items div:hover {
+  background: #e9f2ff;
+}
+
+.footer{
+  padding:40px 0; 
+  background-color: black;
+  }
+
+.f_left{
+  width:30%;
+  float: left;
+}
+.f_left ul{
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+.f_left ul li{
+  float:left;
+}
+.f_left ul li a{
+  text-decoration: none;
+  color: white;
+  margin-right: 15px;
+  display: inline-block;
+}
+.f_right{
+  width:30%;
+  float:right;
+}
+.f_right ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+  float:right;
+}
+.f_right ul li{
+  float:left;
+}
+.f_right ul li a{
+  text-decoration: none;
+  margin-right: 15px;
+  display: inline-block;
+}
+.f_right ul li span{
+  margin-right: 15px;
+  color: white;
+  display: inline-block;
+}
+.f_right ul li:last-child a{
+    margin-right:0;
+}
+
+.carousel-caption {
+  color:whitesmoke;
+ }
+
+
+.calculator{
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+.calculator:hover {
+         background: darkslateblue;
+         }
